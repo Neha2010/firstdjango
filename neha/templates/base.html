@@ -1,0 +1,77 @@
+<html>
+   <body>
+
+      <form name = "form" action = "#"
+         method = "POST" >
+         {% csrf_token %}
+
+         <div style = "max-width:470px;">
+            <center>
+               <label for="Name" >Name</label>
+               <br>
+               <input type = "text" pattern="^[a-zA-Z]+$"
+                id="Name" placeholder = "Name"  required name = "name" />
+            </center>
+         </div>
+
+         <br>
+
+         <div style = "max-width:470px;">
+            <center>
+               <label for="email">Email</label>
+               <br>
+               <input type = "email" id="email"
+                  placeholder = "email@gmail.com" required name = "email" />
+            </center>
+         </div>
+
+         <br>
+
+         <div style = "max-width:470px;">
+            <center>
+               <label for="phone">Mobile </label>
+               <br>
+               <input type = "text" pattern="[789][0-9]{9}"  id="phone"
+                  placeholder = "9812345678"  required name = "phone" />
+            </center>
+         </div>
+         <br>
+
+         <div style = "max-width:470px;">
+            <center>
+               <label for="password">Password</label>
+               <br>
+               <input type = "password" id="password"
+                  placeholder = "Abcd@123" required name = "password" />
+            </center>
+         </div>
+
+         <br>
+
+         <div style = "max-width:470px;">
+            <center>
+               <label for="confirm password">Confirm Password</label>
+               <br>
+               <input type = "password"  id="confirm password"
+                  placeholder = "confirm password" required name = "repassword" />
+            </center>
+         </div>
+
+         <br>
+         <br>
+         <div style = "max-width:470px;">
+            <center>
+
+               <button style = "border:5px; background-color:#4285F4; margin-left:8%;
+                  height:35px; width:20%;margin-left:19%;" type = "submit"
+                  value = "header" >
+                  <strong>Register</strong>
+               </button>
+
+            </center>
+         </div>
+
+      </form>
+
+   </body>
+</html>

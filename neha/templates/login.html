@@ -1,0 +1,34 @@
+<html>
+   <body>
+
+      <form name = "form" action = "{% url 'afterlogin' %}" method = "POST" >
+         {% csrf_token %}
+
+         <div style = "max-width:470px;">
+            <center>
+               <label for="email">Email</label>
+               <br>
+               <input type = "email" id="email"
+                  placeholder = "Enter Registered email id" required name = "email" />
+            </center>
+         </div>
+
+
+
+         <br>
+         <div style = "max-width:470px;">
+            <center>
+
+               <button style = "border:5px; background-color:#4285F4; margin-left:8%;
+                  height:35px; width:20%;margin-left:0%;" type = "submit"
+                  value = "header" >
+                  <strong>LOGIN</strong>
+               </button>
+
+            </center>
+         </div>
+
+      </form>
+
+   </body>
+</html>
